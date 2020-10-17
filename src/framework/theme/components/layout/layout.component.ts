@@ -334,10 +334,10 @@ export class NbLayoutComponent implements AfterViewInit, OnDestroy {
     this.unregisterAsOverlayContainer();
   }
 
-  @HostListener('window:scroll', ['$event'])
+  /*@HostListener('window:scroll', ['$event'])
   onScroll($event) {
     this.scrollService.fireScrollChange($event);
-  }
+  }*/
 
   @HostListener('window:resize', ['$event'])
   onResize(event) {
